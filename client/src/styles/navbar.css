@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+.custom-navbar {
+  padding: 0.3rem 2rem !important;
+  background: rgba(5, 6, 6, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.brand-text {
+font-family: 'overpass';
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.nav-links-container {
+  gap: 1rem;
+}
+
+.nav-link-custom {
+    font-family: 'overpass';
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px;
+  transition: all 0.3s ease !important;
+}
+
+.nav-link-custom:hover {
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.nav-link-logout {
+    font-family: 'overpass';
+  color: #ff4d4d !important;
+  font-weight: 500;
+  transition: all 0.3s ease !important;
+}
+
+.nav-link-logout:hover {
+    font-family: 'overpass';
+  color: #ff3333 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link-login {
+    font-family: 'overpass';
+  background-color: #28a745;
+  color: white !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 25px;
+  transition: all 0.3s ease !important;
+}
+
+.nav-link-login:hover {
+
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Modal Styling */
+.auth-modal .modal-content {
+  border-radius: 15px;
+  border: none;
+}
+
+.modal-header-custom {
+  border-bottom: none;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.auth-nav-pills {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.auth-nav-pills .nav-link {
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+  color: #495057;
+  border: 2px solid transparent;
+}
+
+.auth-nav-pills .nav-link.active {
+  background-color: #28a745 !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .nav-links-container {
+    text-align: center;
+  }
+  
+  .nav-link-custom, 
+  .nav-link-logout,
+  .nav-link-login {
+    margin: 0.1rem 0;
+  }
+}
