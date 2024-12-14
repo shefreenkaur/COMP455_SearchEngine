@@ -153,9 +153,9 @@ Submit a pull request
 
 ## Acknowledgments
 
-OpenLibrary API for book data
-Original MERN project creators
-MongoDB Atlas for database hosting
+1. OpenLibrary API for book data
+2. Original MERN project creators
+3. MongoDB Atlas for database hosting
 
 ## Author
 
