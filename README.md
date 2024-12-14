@@ -143,17 +143,20 @@ Commit your changes
 Push to the branch
 Submit a pull request
 
-License
-This project is based on an MIT licensed framework and includes substantial modifications and enhancements.
+## License
 
-Acknowledgments
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Acknowledgments
 
 OpenLibrary API for book data
 Original MERN project creators
 MongoDB Atlas for database hosting
 
-Author
+## Author
+
 Shefreen Kaur
+
 Contact
 
 GitHub: shefreenkaur
