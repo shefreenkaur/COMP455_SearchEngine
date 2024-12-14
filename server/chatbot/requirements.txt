@@ -1,0 +1,6 @@
+winget install Rustup.Rustup
+pip install fastapi
+pip install uvicorn
+pip install pandas
+pip install scikit-learn
+pip install requests
