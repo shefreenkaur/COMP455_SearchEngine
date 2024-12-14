@@ -57,9 +57,10 @@ python -m venv venv
 source venv/bin/activate  
 ``` 
 # On Windows: 
+Please check requirements.txt
 ``` bash
 venv\Scripts\activate
-pip install 
+pip install <requirements.txt>
 ``` 
 Start the development servers:
 ``` bash
