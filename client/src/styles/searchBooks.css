@@ -229,3 +229,23 @@
 	from { opacity: 0; transform: translateY(10px); }
 	to { opacity: 1; transform: translateY(0); }
   }
+  .notes-section {
+	margin-top: 1rem;
+	border-top: 1px solid #dee2e6;
+	padding-top: 1rem;
+  }
+  
+  .note-item {
+	background-color: #f8f9fa;
+	border-left: 3px solid #28a745;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+  }
+  
+  .note-item p {
+	margin-bottom: 0.25rem;
+  }
+  
+  .note-item small {
+	color: #6c757d;
+  }

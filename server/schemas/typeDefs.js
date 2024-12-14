@@ -14,6 +14,8 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     saveBook(book: SaveBookInput!): User
     removeBook(bookId: String!): User
+    addBookNote(bookId: String!, note: NoteInput!): User
+  removeBookNote(bookId: String!, noteId: ID!): User
   }
 
   # type User {
@@ -107,8 +109,14 @@ type Book {
     ASC
     DESC
   }
+    type Note {
+  content: String
+  createdAt: String
+}
 
-  
+input NoteInput {
+  content: String!
+}
 
   type SearchResult {
     books: [Book]!

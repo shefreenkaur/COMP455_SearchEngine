@@ -150,31 +150,50 @@ const resolvers = {
       }
     },
     // Deletes book from a user's `savedBooks`
-    removeBook: async (parent, args, context) => {
-      // TDO: Implement book removal logic
-      const { bookId } = args;
-      const { user } = context;
-    
+    removeBook: async (parent, { bookId }, context) => {
+      if (!context.user) {
+        throw new AuthenticationError('You need to be logged in!');
+      }
+      
       try {
-        // Find the logged-in user based on the context
-        const foundUser = await User.findById(user._id);
-  
-        if (!foundUser) {
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $pull: { savedBooks: { bookId: bookId } } },
+          { new: true }
+        );
+    
+        if (!updatedUser) {
           throw new AuthenticationError('User not found');
         }
     
-        foundUser.savedBooks = foundUser.savedBooks.filter(
-          (book) => book.bookId !== bookId
-        );
-    
-        await foundUser.save();
-    
-        return foundUser;
+        return updatedUser;
       } catch (err) {
-        throw new ApolloError('Failed to remove book', 'INTERNAL_SERVER_ERROR');
+        console.error('Remove book error:', err);
+        throw new ApolloError('Failed to remove book');
+      }
+    },
+    addBookNote: async (parent, { bookId, note }, context) => {
+      if (!context.user) {
+        throw new AuthenticationError('You need to be logged in!');
+      }
+      try {
+        const updatedUser = await User.findOneAndUpdate(
+          { 
+            "_id": context.user._id,
+            "savedBooks.bookId": bookId 
+          },
+          { 
+            $push: { 
+              "savedBooks.$.notes": note 
+            } 
+          },
+          { new: true }
+        );
+        return updatedUser;
+      } catch (err) {
+        throw new ApolloError('Failed to add note');
       }
     }
-
 
   },
 };
