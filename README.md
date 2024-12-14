@@ -9,6 +9,7 @@ Personal book collection management
 Note-taking functionality for saved books
 AI-powered book recommendation chatbot
 Responsive, user-friendly interface
+![image](https://github.com/user-attachments/assets/69773fc7-008d-4276-be75-7db137006f66)
 
 ## Technologies Used
 
@@ -75,6 +76,7 @@ python -m uvicorn main:app --reload --port 8000
 1. Main application: http://localhost:3000
 2. GraphQL playground: http://localhost:3001/graphql
 3. Chatbot API: http://localhost:8000
+![image](https://github.com/user-attachments/assets/39b2f32a-a483-424d-92e8-6ac2cc9444c0)
 
 # Features Details
 Book Search
@@ -98,6 +100,8 @@ mutation AddBookNote($bookId: String!, $note: String!) {
   }
 }
  ```
+![image](https://github.com/user-attachments/assets/04cd225d-6271-4094-8d6e-55434d3d9587)
+
 # AI Chatbot
 
 Get book recommendations
