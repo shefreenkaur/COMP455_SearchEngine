@@ -13,12 +13,12 @@ Responsive, user-friendly interface
 
 ## Technologies Used
 
-Frontend: React.js, Apollo Client, React Bootstrap
-Backend: Node.js, Express.js, GraphQL, Apollo Server
-Database: MongoDB
-Authentication: JWT (JSON Web Tokens)
-APIs: OpenLibrary API
-Chatbot: FastAPI, Python
+1. Frontend: React.js, Apollo Client, React Bootstrap
+2. Backend: Node.js, Express.js, GraphQL, Apollo Server
+3. Database: MongoDB
+4. Authentication: JWT (JSON Web Tokens)
+5. APIs: OpenLibrary API
+6. Chatbot: FastAPI, Python
 
 ## Installation
 
