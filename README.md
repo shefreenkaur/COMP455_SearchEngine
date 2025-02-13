@@ -3,11 +3,11 @@
 A modern, personalized book discovery application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). Features include book searching, saving, personal notes, and an AI-powered chatbot assistant for recommendations.
 Features
 
-Advanced book search using OpenLibrary API
-User authentication and account management
-Personal book collection management
-Note-taking functionality for saved books
-AI-powered book recommendation chatbot
+1. Advanced book search using OpenLibrary API
+2. User authentication and account management
+3. Personal book collection management
+4. Note-taking functionality for saved books
+5. book recommendation chatbot
 Responsive, user-friendly interface
 ![image](https://github.com/user-attachments/assets/69773fc7-008d-4276-be75-7db137006f66)
 
